@@ -1095,6 +1095,7 @@
     font-size: large;
     font-family: "poppins-medium", sans-serif;
     letter-spacing: .7rem;
+    text-decoration: none;
 }
 
  
@@ -1224,6 +1225,8 @@
      padding: 15px 0;
      line-height: 16px;
      border: none;
+     text-decoration: none;
+
  }
  .main-navigation li a:hover {
      color: #5baab8;
