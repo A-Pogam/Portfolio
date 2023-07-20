@@ -1209,8 +1209,6 @@
   */
  #intro {
      background: #151515 url(/images/intro-bg.png) no-repeat center bottom;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
      background-size: cover;
      background-attachment: fixed;
      width: 100%;
@@ -1234,8 +1232,6 @@
      display: table-cell;
      vertical-align: middle;
      text-align: center;
-     -webkit-transform: translateY(-2.1rem);
-     -ms-transform: translateY(-2.1rem);
      transform: translateY(-2.1rem);
  }
  .intro-content h1 {
