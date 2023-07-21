@@ -442,7 +442,6 @@
      padding: 1.5rem 0;
      border: 0;
      outline: none;
-     vertical-align: middle;
      color: #313131;
      font-family: "poppins-regular", sans-serif;
      font-size: 1.5rem;
@@ -1173,6 +1172,8 @@
      background: none;
      color: #5baab8;
  }
+
+ 
  
  /**
   * responsive:
@@ -1462,9 +1463,11 @@
  
  .about-content {
      position: relative;
-     text-align: left;
+     text-align: center;
      max-width: 850px;
-     margin-bottom: 3.6rem;
+     margin: 0 auto;
+     width: 80%;
+
  }
  .about-content h3 {
      font-family: "poppins-bold", sans-serif;
@@ -1969,6 +1972,8 @@
  /* contact form */
  .contact-form {
      max-width: 740px;
+     margin: 0 auto;
+     width: 80%;
  }
  
  .contact-form ::-webkit-input-placeholder {
@@ -2280,7 +2285,7 @@
      width: 6rem;
      line-height: 6.6rem;
      text-align: center;
-     background: #cc005f;
+     background: #5baab8;
      color: #FFFFFF;
      text-align: center;
      text-transform: uppercase;
