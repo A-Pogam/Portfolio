@@ -1590,18 +1590,18 @@
      color: #FFFFFF;
      position: absolute;
      left: 35%;
-     top: .9rem;
+     top: 3rem;
      margin-left: -2.4rem;
  }
  #resume .timeline-ico i {
      position: relative;
      left: .05rem;
-     top: .2rem;
+     top: 1.5rem;
  }
  
  #resume .timeline-header {
      float: left;
-     width: 35%;
+     width: 28%;
      padding-right: 90px;
      text-align: right;
  }
@@ -1721,32 +1721,36 @@
      padding-bottom: 12rem;
  }
  #portfolio .folio-item {
-     padding: 0;
-     position: relative;
-     overflow: hidden;
- }
- #portfolio .folio-item img {
-     vertical-align: middle;
-     -moz-transition: all 0.5s ease-in-out;
-     -o-transition: all 0.5s ease-in-out;
-     -webkit-transition: all 0.5s ease-in-out;
-     -ms-transition: all 0.5s ease-in-out;
-     transition: all 0.5s ease-in-out;
- }
- 
- #portfolio .overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: transparent;
-     -moz-transition: all 0.5s ease-in-out;
-     -o-transition: all 0.5s ease-in-out;
-     -webkit-transition: all 0.5s ease-in-out;
-     -ms-transition: all 0.5s ease-in-out;
-     transition: all 0.5s ease-in-out;
- }
+    /* Modifie la largeur pour que les éléments restent dans une même ligne */
+    width: 30%; /* A ajuster ce pourcentage selon le nombre d'éléments que je souhaite afficher par ligne */
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Ajout d'une nouvelle règle pour assurer que les éléments restent sur la même ligne */
+    vertical-align: top; /* Ajout d'une nouvelle règle pour aligner les éléments en haut de la ligne */
+  }
+  
+  #portfolio .folio-item img {
+    vertical-align: middle;
+    transition: all 0.5s ease-in-out;
+    width: 100%; /* L'image prend maintenant la largeur complète de son parent */
+    height: auto; /* Ajustement automatique de la hauteur pour conserver les proportions de l'image */
+  }
+  
+  #portfolio .folio-item-wrapper {
+    position: relative;
+  }
+  
+  #portfolio .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    /* Ajoutez les transitions ici si nécessaire */
+  }
+  
  
  #portfolio .folio-item-table {
      display: table;
