@@ -1719,6 +1719,7 @@
      background: #FFFFFF;
      padding-top: 12rem;
      padding-bottom: 12rem;
+     text-align: center;
  }
  #portfolio .folio-item {
     /* Modifie la largeur pour que les éléments restent dans une même ligne */
@@ -1748,7 +1749,6 @@
     width: 100%;
     height: 100%;
     background: transparent;
-    /* Ajoutez les transitions ici si nécessaire */
   }
   
  
@@ -1828,12 +1828,7 @@
      position: relative;
      margin: 0 auto;
  }
- .popup-modal .media {
-     position: relative;
- }
- .popup-modal img {
-     vertical-align: bottom;
- }
+
  .popup-modal .description-box {
      padding: 1.8rem 3.6rem 3rem;
  }
@@ -1874,13 +1869,8 @@
      cursor: pointer;
      display: block;
      text-align: center;
-     float: left;
-     width: 50%;
-     -moz-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-     -webkit-transition: all 0.3s ease-in-out;
-     -ms-transition: all 0.3s ease-in-out;
      transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
  }
  .popup-modal .link-box a:first-child {
      border-right: 1px solid rgba(200, 200, 200, 0.1);
