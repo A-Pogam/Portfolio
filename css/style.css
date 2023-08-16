@@ -16,7 +16,6 @@
  *  10. resume
  *  11. portfolio
  *  12. contact
- *  13. footer
  *
  * =================================================================== 
  
@@ -61,14 +60,7 @@
   * links - (_document-setup.scss)
   * -------------------------------------------------------------------
   */
- a, a:visited {
-     color: #000000;
-     -moz-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-     -webkit-transition: all 0.3s ease-in-out;
-     -ms-transition: all 0.3s ease-in-out;
-     transition: all 0.3s ease-in-out;
- }
+
  a:hover, a:focus, a:active {
      color: #5baab8;
      outline: 0;
@@ -428,133 +420,7 @@
  fieldset {
      border: none;
  }
- input[type="email"],
- input[type="number"],
- input[type="search"],
- input[type="text"],
- input[type="tel"],
- input[type="url"],
- input[type="password"],
- textarea,
- select {
-     display: block;
-     height: 6rem;
-     padding: 1.5rem 0;
-     border: 0;
-     outline: none;
-     color: #313131;
-     font-family: "poppins-regular", sans-serif;
-     font-size: 1.5rem;
-     line-height: 3rem;
-     max-width: 100%;
-     background: transparent;
-     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-     -moz-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-     -webkit-transition: all 0.3s ease-in-out;
-     -ms-transition: all 0.3s ease-in-out;
-     transition: all 0.3s ease-in-out;
- }
- .ss-custom-select {
-     position: relative;
-     padding: 0;
- }
- .ss-custom-select select {
-     -webkit-appearance: none;
-     -moz-appearance: none;
-     -ms-appearance: none;
-     -o-appearance: none;
-     appearance: none;
-     text-indent: 0.01px;
-     text-overflow: '';
-     margin: 0;
-     line-height: 3rem;
-     vertical-align: middle;
- }
- .ss-custom-select select option {
-     padding-left: 2rem;
-     padding-right: 2rem;
- }
- .ss-custom-select select::-ms-expand {
-     display: none;
- }
- .ss-custom-select::after {
-     content: '\f0d7';
-     font-family: 'FontAwesome';
-     position: absolute;
-     top: 50%;
-     right: 1.5rem;
-     margin-top: -10px;
-     bottom: auto;
-     width: 20px;
-     height: 20px;
-     line-height: 20px;
-     font-size: 18px;
-     text-align: center;
-     pointer-events: none;
-     color: #252525;
- }
- 
- /* IE9 and below */
- .oldie .ss-custom-select::after {
-     display: none;
- }
- textarea {
-     min-height: 25rem;
- }
- input[type="email"]:focus,
- input[type="number"]:focus,
- input[type="search"]:focus,
- input[type="text"]:focus,
- input[type="tel"]:focus,
- input[type="url"]:focus,
- input[type="password"]:focus,
- textarea:focus,
- select:focus {
-     color: #5baab8;
-     border-bottom: 1px solid #5baab8;
- }
- label, legend {
-     font-family: "poppins-bold", sans-serif;
-     font-size: 1.4rem;
-     margin-bottom: .6rem;
-     color: #3b3b3b;
-     display: block;
- }
- input[type="checkbox"], input[type="radio"] {
-     display: inline;
- }
- label > .label-text {
-     display: inline-block;
-     margin-left: 1rem;
-     font-family: "poppins-regular", sans-serif;
-     line-height: inherit;
- }
- label > input[type="checkbox"], label > input[type="radio"] {
-     margin: 0;
-     position: relative;
-     top: .15rem;
- }
- 
- /**
-  * Style Placeholder Text  
-  * -
-  */
- ::-webkit-input-placeholder {
-     color: #a1a1a1;
- }
- :-moz-placeholder {
-     color: #a1a1a1;  /* Firefox 18- */
- }
- ::-moz-placeholder {
-     color: #a1a1a1;  /* Firefox 19+ */
- }
- :-ms-input-placeholder {
-     color: #a1a1a1;
- }
- .placeholder {
-     color: #a1a1a1 !important;
- }
+
  
  /** 
   * ===================================================================
@@ -565,7 +431,7 @@
  .button,
  a.button,
  button,
- input[type="submit"],
+ .submitform,
  input[type="reset"],
  input[type="button"] {
      display: inline-block;
@@ -584,10 +450,6 @@
      text-align: center;
      white-space: nowrap;
      border: none;
-     -moz-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-     -webkit-transition: all 0.3s ease-in-out;
-     -ms-transition: all 0.3s ease-in-out;
      transition: all 0.3s ease-in-out;
  }
  .button:hover,
@@ -1062,10 +924,6 @@
      top: 50%;
      bottom: auto;
      left: auto;
-     -moz-transition: background 0.2s ease-in-out;
-     -o-transition: background 0.2s ease-in-out;
-     -webkit-transition: background 0.2s ease-in-out;
-     -ms-transition: background 0.2s ease-in-out;
      transition: background 0.2s ease-in-out;
  }
  .menu-toggle span::before, .menu-toggle span::after {
@@ -1075,31 +933,15 @@
      background-color: inherit;
      position: absolute;
      left: 0;
-     -moz-transition-duration: 0.2s, 0.2s;
-     -o-transition-duration: 0.2s, 0.2s;
-     -webkit-transition-duration: 0.2s, 0.2s;
-     -ms-transition-duration: 0.2s, 0.2s;
      transition-duration: 0.2s, 0.2s;
-     -moz-transition-delay: 0.2s, 0s;
-     -o-transition-delay: 0.2s, 0s;
-     -webkit-transition-delay: 0.2s, 0s;
-     -ms-transition-delay: 0.2s, 0s;
      transition-delay: 0.2s, 0s;
  }
  .menu-toggle span::before {
      top: -8px;
-     -moz-transition-property: top, transform;
-     -o-transition-property: top, transform;
-     -webkit-transition-property: top, transform;
-     -ms-transition-property: top, transform;
      transition-property: top, transform;
  }
  .menu-toggle span::after {
      bottom: -8px;
-     -moz-transition-property: bottom, transform;
-     -o-transition-property: bottom, transform;
-     -webkit-transition-property: bottom, transform;
-     -ms-transition-property: bottom, transform;
      transition-property: bottom, transform;
  }
  
@@ -1109,22 +951,14 @@
  }
  .menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
      background-color: #5baab8;
-     -moz-transition-delay: 0s, 0.2s;
-     -o-transition-delay: 0s, 0.2s;
-     -webkit-transition-delay: 0s, 0.2s;
-     -ms-transition-delay: 0s, 0.2s;
      transition-delay: 0s, 0.2s;
  }
  .menu-toggle.is-clicked span::before {
      top: 0;
-     -webkit-transform: rotate(45deg);
-     -ms-transform: rotate(45deg);
      transform: rotate(45deg);
  }
  .menu-toggle.is-clicked span::after {
      bottom: 0;
-     -webkit-transform: rotate(-45deg);
-     -ms-transform: rotate(-45deg);
      transform: rotate(-45deg);
  }
  
@@ -1761,10 +1595,6 @@
      display: table-cell;
      vertical-align: middle;
      text-align: center;
-     -moz-transition: all 0.5s ease-in-out;
-     -o-transition: all 0.5s ease-in-out;
-     -webkit-transition: all 0.5s ease-in-out;
-     -ms-transition: all 0.5s ease-in-out;
      transition: all 0.5s ease-in-out;
      position: relative;
      left: -100%;
@@ -1791,11 +1621,7 @@
  #portfolio .folio-item:hover .folio-item-cell {
      left: 0;
  }
- #portfolio .folio-item:hover img {
-     -webkit-transform: scale(1.05);
-     -ms-transform: scale(1.05);
-     transform: scale(1.05);
- }
+
  
  /**
   * responsive:
@@ -1885,62 +1711,7 @@
          margin: 0 20px;
      }
  }
- 
- /**
-  * transition effect for modal popup - (_layout.scss)
-  * ------------------------------------------------------------------ 
-  */
- 
- /* overlay at start */
- .mfp-fade.mfp-bg {
-     opacity: 0;
-     -moz-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-     -webkit-transition: all 0.3s ease-in-out;
-     -ms-transition: all 0.3s ease-in-out;
-     transition: all 0.3s ease-in-out;
- }
- 
- /* overlay animate in */
- .mfp-fade.mfp-bg.mfp-ready {
-     opacity: .9;
- }
- 
- /* overlay animate out */
- .mfp-fade.mfp-bg.mfp-removing {
-     opacity: 0;
- }
- 
- /* content at start */
- .mfp-fade.mfp-wrap .mfp-content {
-     opacity: 0;
-     -webkit-transform: translateY(-100%);
-     -ms-transform: translateY(-100%);
-     transform: translateY(-100%);
-     -moz-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-     -webkit-transition: all 0.3s ease-in-out;
-     -ms-transition: all 0.3s ease-in-out;
-     transition: all 0.3s ease-in-out;
- }
- 
- /* content animate in */
- .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-     opacity: 1;
-     -webkit-transform: translateY(0);
-     -ms-transform: translateY(0);
-     transform: translateY(0);
- }
- 
- /* content animate out */
- .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-     opacity: 0;
-     -webkit-transform: translateY(-100%);
-     -ms-transform: translateY(-100%);
-     transform: translateY(-100%);
- }
- 
- 
+  
  
  /** 
   * ===================================================================
@@ -1970,91 +1741,11 @@
      width: 80%;
  }
  
- .contact-form ::-webkit-input-placeholder {
-     color: rgba(255, 255, 255, 0.3);
- }
- .contact-form :-moz-placeholder {
-     color: rgba(255, 255, 255, 0.3);  /* Firefox 18- */
- }
- .contact-form ::-moz-placeholder {
-     color: rgba(255, 255, 255, 0.3);  /* Firefox 19+ */
- }
- .contact-form :-ms-input-placeholder {
-     color: rgba(255, 255, 255, 0.3);
- }
- .contact-form .placeholder {
-     color: rgba(255, 255, 255, 0.3) !important;
- }
- 
- #contact form {
-     margin-top: 0;
-     margin-bottom: 3rem;
- }
- #contact form .form-field {
-     position: relative;
- }
- #contact form .form-field:before, #contact form .form-field:after {
-     content: "";
-     display: table;
- }
- #contact form .form-field:after {
-     clear: both;
- }
- #contact form .form-field label {
-     font-family: "poppins-bold", sans-serif;
-     font-size: 1.1rem;
-     line-height: 2.4rem;
-     position: absolute;
-     bottom: -1.2rem;
-     right: .6rem;
-     text-transform: uppercase;
-     letter-spacing: .1rem;
-     padding: 0 2rem;
-     margin: 0;
-     color: #FFFFFF;
-     background: #5baab8;
- }
- #contact form .form-field label::after {
-     position: absolute;
-     left: -5px;
-     top: 50%;
-     margin-top: -6px;
-     border-top: 5px solid transparent;
-     border-bottom: 5px solid transparent;
-     border-right: 5px solid #5baab8;
-     content: "";
- }
- #contact input[type="text"],
- #contact input[type="password"],
- #contact input[type="email"],
- #contact textarea {
-     width: 100%;
-     color: rgba(255, 255, 255, 0.7);
-     margin-bottom: 0;
-     border: none;
-     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
- }
- #contact input[type="text"],
- #contact input[type="password"],
- #contact input[type="email"] {
-     height: 6.6rem;
-     padding: 1.8rem 2rem;
- }
- #contact input[type="text"]:focus,
- #contact input[type="password"]:focus,
- #contact input[type="email"]:focus {
-     border-color: #5baab8;
-     color: #FFFFFF;
- }
- #contact textarea {
-     min-height: 20rem;
-     padding: 1.8rem 2rem;
- }
  #contact textarea:focus {
      border-color: #5baab8;
      color: #FFFFFF;
  }
- #contact button.submitform {
+ #contact a.submitform {
      font-size: 1.5rem;
      display: block;
      letter-spacing: .2rem;
@@ -2066,200 +1757,11 @@
      background: #368290;
      color: #FFFFFF;
  }
- #contact button.submitform:hover, #contact button.submitform:focus {
+ #contact a.submitform:hover, #contact a.submitform:focus {
      background: #5baab8;
  }
- #message-warning, #message-success {
-     display: none;
-     background: #0d0d0d;
-     border-radius: 3px;
-     padding: 3rem;
-     margin-bottom: 3.6rem;
-     width: 100%;
- }
- #message-warning {
-     color: #fa0003;
- }
- #message-success {
-     color: #FF0077;
- }
- #message-warning i, #message-success i {
-     margin-right: 10px;
- }
  
- /* form loader */
- #submit-loader {
-     display: none;
-     position: relative;
-     left: 0;
-     top: 1.8rem;
-     width: 100%;
-     text-align: center;
- }
- #submit-loader .text-loader {
-     display: none;
-     font-family: "poppins-bold", sans-serif;
-     color: #FFFFFF;
-     letter-spacing: .3rem;
-     text-transform: uppercase;
- }
- .oldie #submit-loader .s-loader {
-     display: none;
- }
- .oldie #submit-loader .text-loader {
-     display: block;
- }
- .contact-info {
-     margin: 4.8rem auto 0;
-     font-family: "poppins-regular", sans-serif;
-     font-size: 1.5rem;
-     text-align: center;
- }
- .contact-info .collapse {
-     padding: 0;
- }
- .contact-info .icon {
-     margin-bottom: 2.1rem;
- }
- .contact-info .icon i {
-     font-size: 4.2rem;
-     color: #FFFFFF;
- }
- .contact-info h5 {
-     color: #5baab8;
- }
- 
- /**
-  * loader animation - (_layout.scss)
-  * --------------------------------------------------------------- 
-  */
- .s-loader {
-     margin: 1.2rem auto 3rem;
-     width: 70px;
-     text-align: center;
-     -webkit-transform: translateX(0.45rem);
-     -ms-transform: translateX(0.45rem);
-     transform: translateX(0.45rem);
- }
- .s-loader > div {
-     width: 1rem;
-     height: 1rem;
-     background-color: #FFFFFF;
-     border-radius: 100%;
-     display: inline-block;
-     margin-right: .9rem;
-     -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
- }
- .s-loader .bounce1 {
-     -webkit-animation-delay: -0.32s;
-     animation-delay: -0.32s;
- }
- .s-loader .bounce2 {
-     -webkit-animation-delay: -0.16s;
-     animation-delay: -0.16s;
- }
- @-webkit-keyframes sk-bouncedelay {
-     0%, 80%, 100% {
-         -webkit-transform: scale(0);
-         -ms-transform: scale(0);
-         transform: scale(0);
-     }
-     40% {
-         -webkit-transform: scale(1);
-         -ms-transform: scale(1);
-         transform: scale(1);
-     }
- }
- @keyframes sk-bouncedelay {
-     0%, 80%, 100% {
-         -webkit-transform: scale(0);
-         -ms-transform: scale(0);
-         transform: scale(0);
-     }
-     40% {
-         -webkit-transform: scale(1);
-         -ms-transform: scale(1);
-         transform: scale(1);
-     }
- }
- 
- 
- /** 
-  * ===================================================================
-  * 13. footer - (_layout.scss)
-  *
-  * ------------------------------------------------------------------- 
-  */
- footer {
-     padding-bottom: 3rem;
-     font-size: 1.4rem;
-     font-family: "poppins-regular", sans-serif;
- }
- footer a, footer a:visited {
-     color: #FFFFFF;
- }
- footer a:hover, footer a:focus {
-     color: #5baab8;
- }
- footer .row {
-     max-width: 900px;
- }
- footer .social {
-     text-align: right;
- }
- footer .footer-social {
-     display: inline-block;
-     font-size: 2.1rem;
-     margin: 0;
-     padding: 0;
-     position: relative;
-     top: -.3rem;
- }
- footer .footer-social li {
-     display: inline-block;
-     margin: 0 12px;
-     padding: 0;
- }
- footer .footer-social li a {
-     color: #FFFFFF;
- }
- footer .copyright span {
-     display: inline-block;
- }
- footer .copyright span::after {
-     content: "|";
-     display: inline-block;
-     padding: 0 1rem 0 1.2rem;
-     color: rgba(255, 255, 255, 0.1);
- }
- footer .copyright span:last-child::after {
-     display: none;
- }
- 
- /**
-  * responsive:
-  * footer
-  * -------------------------------------------------------------------
-  */
- @media only screen and (max-width:768px) {
-     footer {
-         text-align: center;
-     }
-     footer .social {
-         display: block;
-         width: 100%;
-         text-align: center;
-         margin-bottom: 1.5rem;
-     }
-     footer .copyright span {
-         display: block;
-     }
-     footer .copyright span::after {
-         display: none;
-     }
- }
- 
+
  /**
   * go to top - (_layout.scss)
   * ------------------------------------------------------------------- 
@@ -2283,10 +1785,6 @@
      color: #FFFFFF;
      text-align: center;
      text-transform: uppercase;
-     -moz-transition: all 0.3s ease-in-out;
-     -o-transition: all 0.3s ease-in-out;
-     -webkit-transition: all 0.3s ease-in-out;
-     -ms-transition: all 0.3s ease-in-out;
      transition: all 0.3s ease-in-out;
  }
  #go-top a i {
@@ -2296,5 +1794,3 @@
  #go-top a:hover {
      background: #000000;
  }
- 
- /*# sourceMappingURL=main.css.map */
