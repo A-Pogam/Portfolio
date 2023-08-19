@@ -1318,8 +1318,10 @@
      text-align: center;
  }
  .button-section .button {
-     width: 250px;
+    width: 100%; /* Utiliser la largeur en pourcentage */
+    max-width: 250px; 
  }
+
  .button-section [class*="col-"] .button:first-child {
      margin-right: 4rem;
  }
@@ -1756,7 +1758,16 @@
      width: 100%;
      background: #368290;
      color: #FFFFFF;
+     box-sizing: border-box; /* Ajout de la propriété box-sizing */
+     text-align: center; /* Centrer le texte horizontalement */
  }
+
+ @media only screen and (max-width: 768px) {
+    #contact a.submitform {
+        padding: 0 2rem; /* Ajustement du padding pour les écrans plus petits */
+    }
+}
+
  #contact a.submitform:hover, #contact a.submitform:focus {
      background: #5baab8;
  }
