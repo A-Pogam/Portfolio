@@ -1043,7 +1043,7 @@
   * ------------------------------------------------------------------- 
   */
  #intro {
-     background: #151515 url(/images/intro-bg.png) no-repeat center bottom;
+     background: #151515 url(./images/intro-bg.png) no-repeat center bottom;
      background-size: cover;
      background-attachment: fixed;
      width: 100%;
