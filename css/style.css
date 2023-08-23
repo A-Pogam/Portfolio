@@ -1704,7 +1704,7 @@
      border-right: 1px solid rgba(200, 200, 200, 0.1);
  }
  .popup-modal .link-box a:hover {
-     background: #cc005f;
+     background: #5baab8;
      border: none;
  }
  @media only screen and (max-width:600px) {
